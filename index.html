@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="new-integrity-hash" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/adapt.css" />
+    <title>ANDE GROUP</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="wrapper__topnav">
+            <div class="hamburger">
+                <div class="hamburger__one"></div>
+                <div class="hamburger__two"></div>
+                <div class="hamburger__three"></div>
+            </div>
+
+            <div class="menu">
+                <div class="menu__logo">
+                    logo
+                </div>
+
+                <ul class="menu__nav">
+                    <li class="menu__nav-item">
+                        <a href="#" class="menu__nav-link">
+                            <i class="menu__icon fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a href="#" class="menu__nav-link notification">
+                            <i class="menu__icon fa-solid fa-bell"></i>
+                            <span class="notification__count">5</span>
+                        </a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a href="#" class="menu__nav-link user-photo" id="dropdownToggle">
+
+                        </a>
+
+                        <ul class="dropdown" id="dropdownMenu">
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link active">
+                                    <span class="dropdown__icon"><i class="fa-solid fa-user"></i></span>
+                                    <span class="dropdown__title ">Профайл</span>
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">
+                                    <span class="dropdown__icon"><i class="fa-solid fa-circle-info"></i></span>
+                                    <span class="dropdown__title ">Помощь</span>
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">
+                                    <span class="dropdown__icon"><i class="fa-solid fa-gear"></i></span>
+                                    <span class="dropdown__title ">Настройки</span>
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link logout">
+                                    <span class="dropdown__icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                                    <span class="dropdown__title ">Выход</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="wrapper__sidebar sidebar">
+            <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">
+                        <span class="sidebar__icon "><i class="fa-solid fa-house"></i></span>
+                        <span class="sidebar__title ">Главная</span>
+                    </a></li>
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">
+                        <span class="sidebar__icon "><i class="fa-solid fa-arrow-trend-up"></i></span>
+                        <span class="sidebar__title ">Биржа</span>
+                    </a></li>
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">
+                        <span class="sidebar__icon "><i class="fa-solid fa-bullhorn"></i></span>
+                        <span class="sidebar__title ">Офферы</span>
+                    </a></li>
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">
+                        <span class="sidebar__icon "><i class="fa-solid fa-handshake"></i></span>
+                        <span class="sidebar__title ">Сделки</span>
+                    </a></li>
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">
+                        <span class="sidebar__icon "><i class="fa-solid fa-comments"></i></span>
+                        <span class="sidebar__title ">Споры</span>
+                    </a></li>
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link active">
+                        <span class="sidebar__icon "><i class="fa-solid fa-credit-card"></i></span>
+                        <span class="sidebar__title ">Баланс</span>
+                    </a></li>
+
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">
+                        <span class="sidebar__icon "><i class="fa-solid fa-users"></i></span>
+                        <span class="sidebar__title ">Помощники</span>
+                    </a></li>
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">
+                        <span class="sidebar__icon "><i class="fa-solid fa-lightbulb"></i></span>
+                        <span class="sidebar__title ">Банк идей</span>
+                    </a></li>
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">
+                        <span class="sidebar__icon "><i class="fa-solid fa-gift"></i></span>
+                        <span class="sidebar__title ">Сертификаты</span>
+                    </a></li>
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">
+                        <span class="sidebar__icon "><i class="fa-solid fa-shield-halved"></i></span>
+                        <span class="sidebar__title ">Безопасность</span>
+                    </a></li>
+
+            </ul>
+        </div>
+
+        <div class="wrapper__main main">
+            <div class="item">
+
+                <div class="item__button button">
+                    <button class="button__element btn">
+                        Пополнить баланс
+                        <i class="button__icon fa-solid fa-wallet"></i>
+                    </button>
+                </div>
+
+
+                <ul id="balance" role="tablist"
+                    class="item__balance nav nav-tabs nav-pills with-arrow lined flex-column flex-sm-row text-center">
+                    <li class="nav-item flex-sm-fill">
+                        <a id="finance-tab" data-toggle="tab" href="#finance" role="tab" aria-controls="finance"
+                            aria-selected="true"
+                            class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 active">
+                            Мои финансы
+                        </a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="freezed-tab" data-toggle="tab" href="#freezed" role="tab" aria-controls="freezed"
+                            aria-selected="false" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0">
+                            Замороженные средства
+                        </a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="cashback-tab" data-toggle="tab" href="#cashback" role="tab" aria-controls="cashback"
+                            aria-selected="false" class="nav-link text-uppercase font-weight-bold rounded-0">
+                            Возвраты по спорам
+                        </a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history"
+                            aria-selected="false" class="nav-link text-uppercase font-weight-bold rounded-0">
+                            История операций
+                        </a>
+                    </li>
+                </ul>
+                <div id="balance-content" class="tab-content">
+                    <div id="finance" role="tabpanel" aria-labelledby="finance-tab"
+                        class="finance-pane tab-pane fade show active">
+                        <div class="finance-pane__block">
+                            <div class="finance-pane__title title">
+                                Баланс кошелька
+                            </div>
+                            <div class="finance-pane__cash">
+                                8000₽
+                            </div>
+
+                            <div class="finance-pane__link-block">
+                                <i class="button__icon fa-solid fa-plus"></i>
+                                <a class="finance-pane__link fw-bold text-decoration-none">Пополнить баланс</a>
+                            </div>
+
+                            <div class="finance-pane__text text text-grey">
+                                С этим аккаунтом не связан ни один способ оплаты
+                            </div>
+                            <div class="finance-pane__link-block ">
+                                <a class="finance-pane__link text-grey">Добавить способ оплаты</a>
+                            </div>
+
+                        </div>
+                        <div class="finance-pane__block">
+                            <div class="finance-pane__title title">
+                                Контактные данные
+                            </div>
+
+                            <div class="finance-pane__row row">
+                                <div class="finance-pane__column col-lg-6">
+                                    <div class="finance-pane__link-block">
+                                        <a class="finance-pane__link">Настройка учетной записи</a>
+                                    </div>
+                                    <div class="finance-pane__text text">
+                                        Адрес электронной почты: mail@mail.ru
+                                    </div>
+                                    <div class="finance-pane__text text">
+                                        Подтвержден: Да
+                                    </div>
+                                </div>
+                                <div class="finance-pane__column col-lg-6">
+                                    <div class="finance-pane__link-block">
+                                        <a class="finance-pane__link">Управление номером телефона </a>
+                                    </div>
+                                    <div class="finance-pane__text text">
+                                        Телефон заканчивается на: 34
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="finance-pane__block">
+                            <div class="finance-pane__title title">
+                                Выписки и справки
+                            </div>
+                            <div class="finance-pane__link-block">
+                                <a class="finance-pane__link">Выписка по счету</a>
+                            </div>
+                            <div class="finance-pane__link-block">
+                                <a class="finance-pane__link">Универсальный передаточный документ</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="freezed" role="tabpanel" aria-labelledby="freezed-tab" class="tab-pane fade">
+                        Замороженные средства
+                    </div>
+                    <div id="cashback" role="tabpanel" aria-labelledby="cashback-tab" class="tab-pane fade ">
+                        Возвраты по спорам
+                    </div>
+                    <div id="history" role="tabpanel" aria-labelledby="history-tab" class="tab-pane fade ">
+                        История операций
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --primary-color: #1B2F61;
+  --secondary-color: #BACAF5;
+  --nav-hover: #223870;
+  --background-color: #F3F7F9;
+  --light-color: #F5F8FF;
+  --dark-grey: #8490B0;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.wrapper__topnav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.wrapper__topnav .hamburger {
+  width: 70px;
+  height: 100%;
+  background: var(--primary-color);
+  padding: 15px 17px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+.wrapper__topnav .hamburger__one, .wrapper__topnav .hamburger__two, .wrapper__topnav .hamburger__three {
+  width: 35px;
+  height: 4px;
+  background: var(--secondary-color);
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.wrapper__topnav .menu {
+  width: calc(100% - 70px);
+  height: 100%;
+  background: var(--bs-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease-in-out;
+}
+.wrapper__topnav .menu__logo {
+  font-size: 1.4em;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.wrapper__topnav .menu__nav {
+  display: flex;
+}
+.wrapper__topnav .menu__nav-link {
+  display: flex;
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  align-items: center;
+  justify-content: center;
+  transition: border 0.3s ease-in-out;
+  border-radius: 50%;
+  color: var(--primary-color);
+}
+.wrapper__topnav .menu__nav-link:hover {
+  color: var(--nav-hover);
+}
+.wrapper__topnav .menu .notification {
+  position: relative;
+}
+.wrapper__topnav .menu .notification__count {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  height: 15px;
+  width: 15px;
+  line-height: 1;
+  font-size: 12px;
+  text-align: center;
+}
+.wrapper__topnav .menu .user-photo {
+  background-image: url(../assets/img/user.png);
+  background-size: cover;
+}
+.wrapper__topnav .menu .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;
+  margin: 0;
+  top: 72px;
+  right: 30px;
+}
+.wrapper__topnav .menu .dropdown__link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: var(--primary-color);
+}
+.wrapper__topnav .menu .dropdown__link:hover, .wrapper__topnav .menu .dropdown__link.active {
+  background: var(--light-color);
+}
+.wrapper__topnav .menu .dropdown__link.logout {
+  border-top: 0.5px solid #DBDBDB;
+}
+.wrapper__topnav .menu .dropdown__icon {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+.wrapper__topnav .menu .dropdown__title {
+  display: flex;
+}
+.wrapper__topnav .menu__icon {
+  font-size: 20px;
+}
+.wrapper .sidebar {
+  position: fixed;
+  top: 70px;
+  background: var(--primary-color);
+  width: 200px;
+  height: calc(100dvh - 70px);
+  transition: all 0.3s ease;
+  overflow-y: auto;
+}
+.wrapper .sidebar__nav-link {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  color: var(--secondary-color);
+  white-space: nowrap;
+}
+.wrapper .sidebar__nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--secondary-color);
+  display: none;
+}
+.wrapper .sidebar__nav-link:hover, .wrapper .sidebar__nav-link.active {
+  background: var(--nav-hover);
+  color: var(--bs-white);
+}
+.wrapper .sidebar__nav-link:hover:before, .wrapper .sidebar__nav-link.active:before {
+  display: block;
+}
+.wrapper .sidebar__icon {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+.wrapper .sidebar__title {
+  display: flex;
+}
+.wrapper__main {
+  width: calc(100% - 200px);
+  margin-top: 70px;
+  margin-left: 200px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  overflow-y: auto;
+}
+.wrapper__main .item {
+  display: flex;
+  flex-direction: column;
+  background: var(--bs-white);
+  margin-bottom: 10px;
+  padding: 25px 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.wrapper__main .item__balance {
+  padding-top: 25px;
+}
+.wrapper__main .item .finance-pane__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 0.5px solid var(--dark-grey);
+  padding: 25px 0;
+}
+.wrapper__main .item .finance-pane__block:last-child {
+  border-bottom: none;
+}
+.wrapper__main .item .finance-pane__title {
+  color: var(--dark-grey);
+  font-size: 1.2em;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+.wrapper__main .item .finance-pane__cash {
+  font-size: 3em;
+  line-height: 1.1;
+  font-weight: 500;
+}
+.wrapper__main .item .finance-pane__link-block {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 1em;
+}
+.wrapper__main .item .finance-pane__link {
+  display: block;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.wrapper__main .item .finance-pane__link:hover {
+  text-decoration: none;
+}
+.wrapper.collapse .sidebar {
+  width: 70px;
+}
+.wrapper.collapse .sidebar__nav-link {
+  align-items: center;
+  justify-content: center;
+}
+.wrapper.collapse .sidebar__icon {
+  margin: 0;
+}
+.wrapper.collapse .sidebar__title {
+  display: none;
+}
+.wrapper.collapse .main {
+  width: calc(100% - 70px);
+  margin-left: 70px;
+}
+
+.lined .nav-link {
+  color: var(--dark-grey);
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 0.9em;
+}
+
+.lined .nav-link:hover {
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.lined .nav-link.active {
+  background: none;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.button__element {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+}
+.button__element:hover {
+  background-color: var(--primary-color);
+  color: var(--bs-white);
+}
+
+.text-grey {
+  color: var(--dark-grey);
+}

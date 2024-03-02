@@ -1,0 +1,316 @@
+@media (max-width: 320px) {
+    body {
+        font-size: 11px;
+    }
+
+    .wrapper {
+        &__main {
+            width: calc(100% - 130px);
+            margin-left: 130px;
+            padding: 0;
+            margin-top: 60px;
+            .item{
+                padding: 25px 10px;
+            }
+        }
+
+        .sidebar {
+            width: 130px;
+            top: 60px;
+            height: calc(100dvh - 60px);
+
+            &__nav-link {
+                padding: 8px;
+            }
+
+            &__icon {
+                margin-right: 5px;
+            }
+        }
+
+
+        &__topnav {
+            height: 60px;
+            .hamburger {
+                width: 60px;
+                &__one,
+                &__two,
+                &__three {
+                    width: 28px;
+                    height: 3px;
+                }
+            }
+
+            .menu {
+                width: calc(100% - 60px);
+                .dropdown{
+                    &__link{
+                        padding: 10px;
+                    }
+                }
+            }
+
+        }
+
+        &.collapse {
+            .sidebar {
+                width: 60px;
+            }
+
+            .main {
+                width: calc(100% - 60px);
+                margin-left: 60px;
+            }
+        }
+
+
+    }
+
+}
+
+@media (min-width: 319px) and (max-width: 425px) {
+    body {
+        font-size: 12px;
+    }
+
+    .wrapper {
+        &__main {
+            width: calc(100% - 140px);
+            margin-left: 140px;
+            padding: 0;
+            margin-top: 60px;
+            .item{
+                padding: 25px 12px;
+            }
+        }
+
+        .sidebar {
+            width: 140px;
+            height: calc(100dvh - 60px);
+            top: 60px;
+            &__nav-link {
+                padding: 10px;
+            }
+
+            &__icon {
+                margin-right: 5px;
+            }
+        }
+
+
+        &__topnav {
+            height: 60px;
+            .hamburger {
+                width: 60px;
+                &__one,
+                &__two,
+                &__three {
+                    width: 28px;
+                    height: 3px;
+
+                }
+            }
+
+            .menu {
+                width: calc(100% - 60px);
+                .dropdown{
+                    &__link{
+                        padding: 10px;
+                    }
+                }
+            }
+
+        }
+
+        &.collapse {
+            .sidebar {
+                width: 60px;
+            }
+
+            .main {
+                width: calc(100% - 60px);
+                margin-left: 60px;
+            }
+        }
+    }
+}
+
+// Стили для экранов от xs до sm включительно (до 576px)
+@media (min-width: 424px) and (max-width: 575px) {
+    body {
+        font-size: 12px;
+    }
+
+    .wrapper {
+        &__main {
+            width: calc(100% - 150px);
+            margin-left: 150px;
+            padding: 0;
+            margin-top: 60px;
+            .item{
+                padding: 25px 15px;
+            }
+        }
+
+        .sidebar {
+            width: 150px;
+            height: calc(100dvh - 60px);
+            top: 60px;
+
+            &__nav-link {
+                padding: 15px;
+            }
+        }
+
+
+        &__topnav {
+            height: 60px;
+            .hamburger {
+                width: 60px;
+                &__one,
+                &__two,
+                &__three {
+                    width: 28px;
+                    height: 3px;
+
+                }
+            }
+
+            .menu {
+                width: calc(100% - 60px);
+                .dropdown{
+                    &__link{
+                        padding: 10px;
+                    }
+                }
+            }
+
+        }
+
+        &.collapse {
+            .sidebar {
+                width: 60px;
+            }
+
+            .main {
+                width: calc(100% - 60px);
+                margin-left: 60px;
+            }
+        }
+
+    }
+}
+
+// Стили для экранов от sm до md включительно (от 576px до 767px)
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        font-size: 13px;
+    }
+
+    .wrapper {
+        &__main {
+            width: calc(100% - 150px);
+            margin-left: 150px;
+            padding: 10px;
+            margin-top: 60px;
+            .item{
+                padding: 25px 10px;
+            }
+        }
+
+        .sidebar {
+            width: 150px;
+            height: calc(100dvh - 60px);
+            top: 60px;
+
+            &__nav-link {
+                padding: 15px;
+            }
+        }
+
+        &__topnav {
+            height: 60px;
+            .hamburger {
+                width: 60px;
+
+                &__one,
+                &__two,
+                &__three {
+                    width: 28px;
+                    height: 4px;
+
+                }
+            }
+
+            .menu {
+                width: calc(100% - 60px);
+            }
+
+        }
+
+        &.collapse {
+            .sidebar {
+                width: 60px;
+            }
+
+            .main {
+                width: calc(100% - 60px);
+                margin-left: 60px;
+            }
+        }
+    }
+}
+
+// Стили для экранов от md до lg включительно (от 768px до 991px)
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 14px;
+    }
+
+    .wrapper {
+        &__main {
+            width: calc(100% - 180px);
+            margin-left: 180px;
+            padding: 15px;
+            .item{
+                padding: 25px 15px;
+            }
+        }
+
+        .sidebar {
+            width: 180px;
+        }
+    }
+}
+
+// Стили для экранов от lg до xl включительно (от 992px до 1199px)
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+// Стили для экранов от xl до xxl включительно (от 1200px до 1399px)
+@media (min-width: 1200px) and (max-width: 1399px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+// Стили для экранов больше xxl (1400px и более)
+@media (min-width: 1400px) {
+    body {
+        font-size: 18px;
+    }
+
+    .wrapper {
+        &__main {
+            width: calc(100% - 250px);
+            margin-left: 250px;
+        }
+
+        .sidebar {
+            width: 250px;
+        }
+    }
+}
